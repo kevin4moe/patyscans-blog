@@ -1,56 +1,33 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class=" bg-purple-300">
+    <div id="nav" class="container mb-4 bg-white rounded-b flex flex-row">
+      <img alt="Vue logo" src="@/assets/logo.png" class="ml-1 w-1/12 " />
+      <router-link to="/" class="m-2">Home</router-link>
+      <router-link to="/about" class="m-2">About</router-link>
     </div>
     <router-view />
+    <footer class="w-full mt-4">
+      <div
+        class="grid grid-cols-3 gap-1 container rounded-t p-4 bg-black bg-opacity-30"
+      >
+        <div><h4 class="font-semibold text-gray-200">Network</h4></div>
+        <div><h4 class="font-semibold text-gray-200">Articulos</h4></div>
+        <div><h4 class="font-semibold text-gray-200">Destacados</h4></div>
+        <div><a class="font-medium text-blue-300">pageexample.com</a></div>
+        <div><a class="font-medium text-blue-300">Example Art</a></div>
+        <div><a class="font-medium text-blue-300">GreatName</a></div>
+        <div><a class="font-medium text-blue-300">pageexample.com</a></div>
+        <div><a class="font-medium text-blue-300">Example Art</a></div>
+        <div><a class="font-medium text-blue-300">GreatName</a></div>
+      </div>
+    </footer>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  components: {}
+};
 </script>
 
-<style>
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-body {
-  background: black;
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#grid {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
-  justify-content: center;
-}
-#grid .grid-item {
-  min-width: 100%;
-  min-height: 100%;
-  background-color: white;
-  cursor: pointer;
-  position: relative;
-}
-#grid .grid-item:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  outline: 0px solid black;
-  display: block;
-}
-#grid .grid-item:hover {
-  opacity: 0.8;
-}
-</style>
+<style></style>
