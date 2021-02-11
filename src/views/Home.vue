@@ -1,6 +1,5 @@
 <template>
-  <div class="container bg-white rounded">
-    <img alt="Vue logo" src="../assets/logo.png" />
+  <div class="container bg-purple-100 rounded grid grid-cols-3">
     <HelloWorld :posts="posts" />
   </div>
 </template>
