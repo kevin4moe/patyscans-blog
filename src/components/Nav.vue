@@ -16,7 +16,7 @@
           /></router-link>
         </li>
         <li class="flex-auto text-center">
-          <router-link to="#" class="font-sans transition duration-100"
+          <router-link to="about" class="font-sans transition duration-100"
             >Guías ▶</router-link
           >
           <ul>
